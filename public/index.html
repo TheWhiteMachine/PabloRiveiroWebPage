@@ -58,20 +58,11 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,70,1) 70%, rgba
 
                 </div>
                 <div class="col-12 col-md-7 text-light align-baseline ">
-                    <h2 class="display-4 ml-3 ml-sm-2 align-baseline ">
-                        Hola, <br> soy <b>Pablo Riveiro</b>
-                    </h2>
-                    <p class="col-12 col-md-9 mt-2">Estudié y me recibí para dedicarme a la comunciación, y lo
-                        hice...<br>
-                        Trabajé
-                        muchos años en los
-                        medios de comunicación como productor, camarógrafo o editor, y hasta guionista, fueron años muy
-                        emocionantes, pero
-                        hace 3 años, decidí hacer un viaje al futuro y volver a una pasión que desde niño me movía...
-                        poder ser programador</p>
+
+                    <div id="saludo" idioma="español"></div>
                 </div>
                 <div class="col-3 d-none d-md-block mr-1 mr-md-2">
-                    <img class="shadow" src="img/profile-pic.png" width="250" min-width="50">
+                    <img src="img/profile-pic.png" width="250" min-width="50">
                 </div>
             </div>
 
@@ -109,7 +100,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,70,1) 70%, rgba
                 </div>
 
                 <div class="col-12 col-md-4 figure ">
-                    <img src="img/TK90X.jpg" width="300px">
+                    <img src="img/TK90X.jpg" width="300px" class="shadow">
                 </div>
 
             </div>
@@ -120,10 +111,10 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,70,1) 70%, rgba
             </div>
             <div class="row mb-1">
                 <div class="col-4 bg-secondary  p-3 m-0
-                    text-white flex-sm-shrink-0 d-flex justify-content-center flex-column">
+                    text-white  d-flex justify-content-center flex-column">
                     <img src="img/fotocamara.jpg" height="auto"
-                        class="col-auto align-items-center shadow flex-md-shrink-0 flex-grow-0 "
-                        style="min-width: 20px;">
+                        class="col-auto align-items-center shadow flex-md-shrink-0 flex-grow-0 p-0 m-0 pt-2 m-md-2"
+                        style="min-width: 150px;">
                     <button class="btn btn-outline-light btn-sm mt-2 shadow-sm">agrandar</button>
                 </div>
                 <div class="col-8 bg-warning mt-0 p-3 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
@@ -134,10 +125,11 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,70,1) 70%, rgba
                     debitis dolor. Dolores asperiores necessitatibus quibusdam eius dolor atque.</div>
             </div>
             <div class="row mb-1">
-                <div class="col-4 bg-secondary  p-3 m-0 d-flex flex-column
-                    text-white flex-sm-shrink-0  flex-md-grow-0 justify-content-center">
-                    <img src="img/standup.jpg" height="auto" class="col-auto align-content-center shadow">
-                    <button class="btn btn-outline-light btn-sm mt-2 shadow-sm">agrandar</button>
+                <div class="col-4 bg-secondary  p-0 m-0 d-flex flex-column
+                    justify-content-center">
+                    <img src="img/standup.jpg" height="auto" class="col-auto align-content-center pt-2 m-md-2""
+                        style=" min-width: 150px;">
+                    <button class="btn btn-outline-light btn-sm mt-2 shadow-sm m-md-3">agrandar</button>
                 </div>
                 <div class="col-8 bg-warning mt-0 p-3 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
                     elit.
@@ -147,10 +139,11 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,70,1) 70%, rgba
                     debitis dolor. Dolores asperiores necessitatibus quibusdam eius dolor atque.</div>
             </div>
             <div class="row mb-1">
-                <div class="col-4 bg-secondary  p-3 m-0 d-flex flex-column
-                    text-white flex-sm-shrink-0 d-flex flex-md-grow-0 justify-content-center">
-                    <img src="img/fotopablo1.jpg" height="auto" class="col-auto align-content-center">
-                    <button class="btn btn-outline-light btn-sm mt-2 shadow-sm">agrandar</button>
+                <div class="col-4 bg-secondary  p-0 m-0 d-flex flex-column
+                    text-white justify-content-center">
+                    <img src="img/fotopablo1.jpg" height="auto" class="col-auto align-content-center pt-2 m-md-2""
+                        style=" min-width: 150px;">
+                    <button class="btn btn-outline-light btn-sm mt-2 shadow-sm m-md-2">agrandar</button>
                 </div>
                 <div class="col-8 bg-warning mt-0 p-3 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
                     elit.
@@ -231,6 +224,11 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,70,1) 70%, rgba
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    <script src="componentes/Saludo.js" type="text/jsx"></script>
 </body>
 
 </html>
