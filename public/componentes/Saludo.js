@@ -7,32 +7,26 @@ class Saludo extends React.Component {
   }
 
   cambiarIdioma(event) {
-    let valorIdioma = event.target.value;
+    console.log(event);
+    if (this.state.idioma) {
+      this.state.idioma = false;
+      idioma = this.state.idioma;
+    } else {
+      this.state.idioma = true;
+      idioma = this.state.idioma;
+    }
+
     this.setState({
-      valor: valorIdioma,
+      idioma: idioma,
     });
   }
 
   render() {
     let idioma = "";
-    if (this.sate.idioma) {
-      idioma = false;
-    } else {
-      idioma = true;
-    }
     return (
       <div>
         <h2 class="display-4 ml-3 ml-sm-2 align-baseline ">{this.props.hi}</h2>
         <div clase="col-12 col-sm-8">{this.props.texto}</div>
-        <button
-          type="button"
-          class="btn btn-outline-secundary"
-          data-bs-toggle="button"
-          autocomplete="off"
-          onchange={cambiarIdioma}
-        >
-          Idioma
-        </button>
       </div>
     );
   }
@@ -65,5 +59,5 @@ ReactDOM.render(
             return to a passion that moved me since I was a child... to be a programmer
           "
   />,
-  document.getElementById("saludo ingles")
+  document.getElementById("saludo")
 );

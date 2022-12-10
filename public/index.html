@@ -59,12 +59,16 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,70,1) 70%, rgba
                 </div>
                 <div class="col-12 col-md-7 text-light align-baseline ">
 
-                    <div id="saludo" idioma="español"></div>
-                </div>
-                <div class="col-3 d-none d-md-block mr-1 mr-md-2">
-                    <img src="img/profile-pic.png" width="250" min-width="50">
+                    <div id="saludo" idioma='true'></div>
+                    <a class="btn btn-outline-primary" target="_blank" onChange={cambiarIdioma()}>
+                        Cambiar idioma
+                    </a>
                 </div>
             </div>
+            <div class="col-3 d-none d-md-block mr-1 mr-md-2">
+                <img src="img/profile-pic.png" width="250" min-width="50">
+            </div>
+        </div>
 
         </div>
     </header>
