@@ -4,34 +4,48 @@ class Saludo extends React.Component {
     this.state = {
       idioma: true,
     };
+    this.cambiarIdioma = this.cambiarIdioma.bind(this);
   }
 
-  cambiarIdioma(event) {
-    let valorIdioma = event.target.value;
-    this.setState({
-      valor: valorIdioma,
-    });
+  cambiarIdioma() {
+    let idiomaActual = this.state.idioma;
+    console.log("idioma actual" + idiomaActual);
+    this.setState({ idioma: !idiomaActual });
   }
 
   render() {
-    let idioma = "";
-    if (this.sate.idioma) {
-      idioma = false;
-    } else {
-      idioma = true;
-    }
-    return (
-      <div>
+    return this.state.idioma ? (
+      <div class="col-12 col-md-7 text-light align-baseline">
+        <h2 class="display-4 ml-3 ml-sm-2 align-baseline ">
+          {this.props.hola}
+        </h2>
+        <div clase="col-12 col-sm-6">{this.props.textoSP}</div>
+        <div class="col-3 d-none d-md-block mr-1 mr-md-2">
+          <img src="img/profile-pic.png" width="250" min-width="50"></img>
+        </div>
+        <div class="col-12 col-md-7 text-light align-baseline  ">
+          <button
+            class="btn btn-outline-primary mt-2 mb-2"
+            type="button"
+            onChange={this.cambiarIdioma}
+          >
+            Cambiar idioma
+          </button>
+        </div>
+      </div>
+    ) : (
+      <div class="col-12 col-md-7 text-light align-baseline">
         <h2 class="display-4 ml-3 ml-sm-2 align-baseline ">{this.props.hi}</h2>
-        <div clase="col-12 col-sm-8">{this.props.texto}</div>
+        <div clase="col-12 col-sm-8">{this.props.textoEN}</div>
+        <div class="col-3 d-none d-md-block mr-1 mr-md-2">
+          <img src="img/profile-pic.png" width="250" min-width="50"></img>
+        </div>
         <button
+          class="btn btn-outline-primary mt-2 mb-2"
           type="button"
-          class="btn btn-outline-secundary"
-          data-bs-toggle="button"
-          autocomplete="off"
-          onchange={cambiarIdioma}
+          onChange={this.cambiarIdioma}
         >
-          Idioma
+          Change Lenguage
         </button>
       </div>
     );
@@ -40,24 +54,16 @@ class Saludo extends React.Component {
 
 ReactDOM.render(
   <Saludo
-    idioma={true}
-    hi="Hola, soy Pablo Riveiro"
-    texto="
+    hola="Hola, soy Pablo Riveiro"
+    textoSP="
             Estudié y me recibí para dedicarme a la comunciación, y lo hice...
             Trabajé muchos años en los medios de comunicación como productor,
             camarógrafo o editor, y hasta guionista, fueron años muy
             emocionantes, pero hace 3 años, decidí hacer un viaje al futuro y
             volver a una pasión que desde niño me movía... poder ser programador
           "
-  />,
-  document.getElementById("saludo")
-);
-
-ReactDOM.render(
-  <Saludo
-    idioma={false}
     hi="Hi, I'm Pablo Riveiro"
-    texto="
+    textoEN="
             I studied and graduated to dedicate myself to communication, and I did...
             I worked many years in the media as a producer,
             cameraman or editor, and even a scriptwriter, those were very
@@ -65,5 +71,5 @@ ReactDOM.render(
             return to a passion that moved me since I was a child... to be a programmer
           "
   />,
-  document.getElementById("saludo ingles")
+  document.getElementById("saludo")
 );
