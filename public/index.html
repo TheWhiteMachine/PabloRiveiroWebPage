@@ -17,7 +17,7 @@
     <header class="mt-0 p-0">
         <nav class="navbar navbar-expand-lg bg-dark fixed-top">
             <div class="container-fluid mt-0">
-                <a class="navbar-brand text-white mt-0" href="#">
+                <a class="navbar-brand text-white mt-0" href="index.html">
                     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor "
                         class="bi bi-regex text-primary" viewBox="0 0 16 16">
                         <path fill-rule="evenodd"
@@ -38,7 +38,7 @@
                             <a class="nav-link text-white" href="#">Portfolio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Acerca de mi</a>
+                            <a class="nav-link text-white" href="about.html">Acerca de mi</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="#">Contacto</a>
@@ -57,7 +57,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,70,1) 70%, rgba
                     </a>
 
                 </div>
-                <div class="col-12 col-md-10" id="saludo"></div>
+                <div className="" id="saludo"></div>
 
             </div>
 
@@ -70,38 +70,6 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,70,1) 70%, rgba
     <article class="bg-dark text-light pt-3">
         <div class="container">
             <div class="row d-flex flex-md-row flex-md-column flex-lg-row align-content-center justify-content-center">
-
-                <div class="col-12 mb-2 mt-2 mb-3">
-                    <h3 class=" mr-5 col-md-2 ">
-                        Algo sobre mi
-                    </h3>
-                </div>
-
-                <div class="col-12 col-md-8 pr-5 pr-sm-0 col-sm-12 pr-lg-5">
-                    <p>Años 80, vi mi primer Atari en la casa de unos primos, era fan de los cazafantasmas, los Goonies,
-                        Starwarss ET,... y claro, cuando llegò el Doc y Marty con Volver al Futuro, me volvì loco, loco
-                        por la ciencia, la tecnologìa, los inventos, la aventura, la ciencia ficcioòn.
-                        Como productor audiovisual siempre usaba el lenguaje cinematogràfico que veìa en series y
-                        pelìculas para mi dìa a dìa, la tele me habìa enseñado a contar historias...
-                        Esta que ven aquì fue mi primer computadora, <b>la TK90.</b> una micro computadora. Para cargar
-                        los
-                        programas habìa que condectarla a una grabador de estudio donde se reproducìan chillidos
-                        infernales que al terminar, decodificaban un juego.
-                        Algunos de mis amigos tenìan la zx spectrum, otros la amiga, al barrio de la teja en Montevideo
-                        Uruguay, la comodore 64 no habìa llegado, si bien pronto llegò Mario, y otro amigo tenài la
-                        Sega, Mortal Kombat arremetìa y luego en pc llegaba el Doom, Prince of Percia o Alone in the
-                        Dark... yo seguìa intentando programar en Basic durante horas y horas.
-                        Y por eso, hoy luego de mis 40 años, vuelvo a mi primer amor.. el còdigo.
-                        Me he estado preparando para lograr una capacitación de FullStack Web Developer, y cada dìa
-                        aprendo un poco màs.
-                        Hoy cambio de rumbo, de la comunicaciòn.. .a lo que antes llamabamos la computaciòn... hoy ya se
-                        llama informàtica, desarrollo, o simplemente IT.</p>
-                </div>
-
-                <div class="col-12 col-md-4 figure ">
-                    <img src="img/TK90X.jpg" width="300px" class="shadow">
-                </div>
-
             </div>
             <div class="row text-center m-2 p-2 mt-4">
                 <div class="col-12">
@@ -114,21 +82,25 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,70,1) 70%, rgba
                     <img src="img/fotocamara.jpg" height="auto"
                         class="col-auto align-items-center shadow flex-md-shrink-0 flex-grow-0 p-0 m-0 pt-2 m-md-2"
                         style="min-width: 150px;">
-                    <button class="btn btn-outline-light btn-sm mt-2 shadow-sm">agrandar</button>
+                    <div id="modal" class="d-flex w-100 h-100">
+
+                    </div>
                 </div>
+
                 <div class="col-8 bg-warning mt-0 p-3 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
                     elit.
                     Expedita
                     ea
                     repudiandae laboriosam, architecto repellendus nam dolores minima doloremque totam suscipit, at
                     debitis dolor. Dolores asperiores necessitatibus quibusdam eius dolor atque.</div>
+
             </div>
             <div class="row mb-1">
                 <div class="col-4 bg-secondary  p-0 m-0 d-flex flex-column
                     justify-content-center">
                     <img src="img/standup.jpg" height="auto" class="col-auto align-content-center pt-2 m-md-2""
                         style=" min-width: 150px;">
-                    <button class="btn btn-outline-light btn-sm mt-2 shadow-sm m-md-3">agrandar</button>
+                    <button class="btn btn-outline-light btn-sm mt-2 shadow-sm m-md-2">agrandar</button>
                 </div>
                 <div class="col-8 bg-warning mt-0 p-3 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
                     elit.
@@ -140,10 +112,11 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,70,1) 70%, rgba
             <div class="row mb-1">
                 <div class="col-4 bg-secondary  p-0 m-0 d-flex flex-column
                     text-white justify-content-center">
-                    <img src="img/fotopablo1.jpg" height="auto" class="col-auto align-content-center pt-2 m-md-2""
+                    <img src="img/fotopablo1.jpg" height="auto" class="col-auto align-content-center pt-2 m-md-2"
                         style=" min-width: 150px;">
                     <button class="btn btn-outline-light btn-sm mt-2 shadow-sm m-md-2">agrandar</button>
                 </div>
+
                 <div class="col-8 bg-warning mt-0 p-3 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
                     elit.
                     Expedita
@@ -152,7 +125,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,70,1) 70%, rgba
                     debitis dolor. Dolores asperiores necessitatibus quibusdam eius dolor atque.</div>
             </div>
             <div class="row">
-                <div class="col-12 text-center m-2 p-2 mt-4">
+                <div class="col-12 text-center m-2 p-2 mt-4 ">
                     <h2>Tecnologìas que manejo</h2>
                 </div>
             </div>
@@ -228,6 +201,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,70,1) 70%, rgba
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script src="componentes/Saludo.js" type="text/jsx"></script>
+    <script src="componentes/Modals.js" type="text/jsx"></script>
 </body>
 
 </html>

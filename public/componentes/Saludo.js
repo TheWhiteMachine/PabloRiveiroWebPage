@@ -15,38 +15,51 @@ class Saludo extends React.Component {
 
   render() {
     return this.state.idioma ? (
-      <div class="col-12 col-md-7 text-light align-baseline">
-        <h2 class="display-4 ml-3 ml-sm-2 align-baseline ">
-          {this.props.hola}
-        </h2>
-        <div clase="col-12 col-sm-6">{this.props.textoSP}</div>
-        <div class="col-3 d-none d-md-block mr-1 mr-md-2">
-          <img src="img/profile-pic.png" width="250" min-width="50"></img>
+      <div className="container text-light">
+        <div className="row d-flex flex-row">
+          <h2 className="col-md-8 text text-light display-4">
+            {this.props.hola}
+          </h2>
+          <div className="col-md-8 d-flex ml-2 ml-md-2 mb-3 mb-md-3 ">
+            {this.props.textoSP}
+          </div>
+          <div className="col-3 d-none d-md-flex mr-1 mr-md-2">
+            <img src="img/profile-pic.png" width="260" min-width="50"></img>
+          </div>
         </div>
-        <div class="col-12 col-md-7 text-light align-baseline  ">
+        <div className="col-12 col-md-7 text-light align-baseline  ">
           <button
-            class="btn btn-outline-primary mt-2 mb-2"
+            className="btn btn-outline-primary mt-2 mb-2"
             type="button"
-            onChange={this.cambiarIdioma}
+            onClick={this.cambiarIdioma}
           >
-            Cambiar idioma
+            Change language
           </button>
         </div>
       </div>
     ) : (
-      <div class="col-12 col-md-7 text-light align-baseline">
-        <h2 class="display-4 ml-3 ml-sm-2 align-baseline ">{this.props.hi}</h2>
-        <div clase="col-12 col-sm-8">{this.props.textoEN}</div>
-        <div class="col-3 d-none d-md-block mr-1 mr-md-2">
-          <img src="img/profile-pic.png" width="250" min-width="50"></img>
+      <div className="container text-light">
+        <div className="row d-flex flex-row">
+          <h2 className="col-md-8 text text-light display-4">
+            {this.props.hi}
+          </h2>
+
+          <div className="col-md-8 d-flex ml-2 ml-md-2 mb-3 mb-md-3 ">
+            {this.props.textoEN}
+          </div>
+          <div className="col-3 d-none d-md-flex">
+            <img src="img/profile-pic.png" width="260" min-width="50"></img>
+          </div>
+          <div className="col-12 col-md-7 text-light align-baseline  ">
+            <button
+              className="btn btn-outline-primary mt-2 mb-2"
+              type="button"
+              onClick={this.cambiarIdioma}
+            >
+              Cambiar Lenguaje
+            </button>
+          </div>
         </div>
-        <button
-          class="btn btn-outline-primary mt-2 mb-2"
-          type="button"
-          onChange={this.cambiarIdioma}
-        >
-          Change Lenguage
-        </button>
       </div>
     );
   }
