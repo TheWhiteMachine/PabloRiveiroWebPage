@@ -9,8 +9,11 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">`
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-    <title>Pablo Riveiro</title>
+
+    <title>Pablo Riveiro Web Developer</title>
 </head>
 
 <body class="m-0">
@@ -35,13 +38,13 @@
                             <a class="nav-link active text-white " aria-current="page" href="#">Inicio</a>
                         </li>
                         <li class="nav-item hover-white">
-                            <a class="nav-link text-white" href="#">Portfolio</a>
+                            <a class="nav-link text-white" href="/public/portafolio.html">Portfolio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-white" href="about.html">Acerca de mi</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-white" href="#">Contacto</a>
+                            <a class="nav-link text-white" href="#contacto">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -82,47 +85,108 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,70,1) 70%, rgba
                     <img src="img/fotocamara.jpg" height="auto"
                         class="col-auto align-items-center shadow flex-md-shrink-0 flex-grow-0 p-0 m-0 pt-2 m-md-2"
                         style="min-width: 150px;">
-                    <div id="modal" class="d-flex w-100 h-100">
+                    <button type="button" class="btn btn-outline-light btn-sm mt-2 shadow m-md-2" data-toggle="modal"
+                        data-target="#modalUno">agrandar</button>
 
+                    <div class="modal" id="modalUno" role="dialog" tabindex="-1" aria-hidden="true"
+                        aria-labelledby="modalTitle" style="top: 10%; left: 10%;">
+                        <div className="modal-dialog">
+                            <div className="modal-content">
+                                <div className="modal-header">
+                                    <h5 className="modat-title" id="modalTitle">Produccion Audiovisual</hS>
+                                </div>
+                                <div className="modal-body">
+                                    <img src="img/fotocamara.jpg" height="500">
+                                </div>
+                                <div className="modal-footer">
+                                </div>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerra</button>
+
+                            </div>
+                        </div>
                     </div>
+
+
                 </div>
 
-                <div class="col-8 bg-warning mt-0 p-3 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit.
-                    Expedita
-                    ea
-                    repudiandae laboriosam, architecto repellendus nam dolores minima doloremque totam suscipit, at
-                    debitis dolor. Dolores asperiores necessitatibus quibusdam eius dolor atque.</div>
+
+                <div class="col-8 bg-warning mt-0 p-3 text-dark">Estudié comunicación en la UDELAR, me recibí de
+                    licenciado, pero ya intentaba mis primeras armas como camarògrafo y editor, allì junto a amigos de
+                    facultad comenzamos nuestros primeros negocios trbajando para televisiòn y productoras
+                    independientes. Era un convencido de que Uruguay podìa producir contenidos televisivos del mismo
+                    nivel que paìses de la regiòn.. y que muchas veces bastaba una buena idea para lograr un producto
+                    exportable, la televisiòn lo intentó un tiempo, hoy en día más bien importamos programas e ideas..
+                    una de lass razones por las cuales, ya no me entusiasma mucho la producción audiovisual, pero què
+                    lindo es trabajar en un gran equipo de gente talentosa con tanta planificación y coordinación...
+                    años muy disfrutables.</div>
 
             </div>
             <div class="row mb-1">
                 <div class="col-4 bg-secondary  p-0 m-0 d-flex flex-column
                     justify-content-center">
-                    <img src="img/standup.jpg" height="auto" class="col-auto align-content-center pt-2 m-md-2""
+                    <img src="img/standup.jpg" height="auto" class="col-auto align-content-center pt-2 m-md-2"
                         style=" min-width: 150px;">
-                    <button class="btn btn-outline-light btn-sm mt-2 shadow-sm m-md-2">agrandar</button>
+                    <button class="btn btn-outline-light btn-sm mt-2 shadow-sm m-md-2" data-toggle="modal"
+                        data-target="#modalDos">agrandar</button>
                 </div>
-                <div class="col-8 bg-warning mt-0 p-3 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit.
-                    Expedita
-                    ea
-                    repudiandae laboriosam, architecto repellendus nam dolores minima doloremque totam suscipit, at
-                    debitis dolor. Dolores asperiores necessitatibus quibusdam eius dolor atque.</div>
+                <div class="modal" id="modalDos" role="dialog" tabindex="-1" aria-hidden="true"
+                    aria-labelledby="modalTitle" style="top: 10%; left: 10%;">
+                    <div className="modal-dialog">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <h5 className="modat-title" id="modalTitle">Stand UP</hS>
+                            </div>
+                            <div className="modal-body">
+                                <img src="img/standup.jpg" height=" 500">
+                            </div>
+                            <div className="modal-footer">
+                            </div>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerra</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-8 bg-warning mt-0 p-3 text-dark">Seguramente Leluthies, el chavo del 8, Abot y Costello,
+                    Jerry Lewis me enfermaron de humor, luego vino El agente f 86 de Mel Brooks, su Loca, loca hisotira
+                    del Mundo y La Pistola Desnuda... todos ellos, me enfermaron de humor .. toda la vida. Así que un
+                    día hace ya unos cuantos años, cuando el Stand Up estaba naciendo en Uruguay, hice un curso y me
+                    subí al escenario, porque sentí que tenía que ser comediante. De hecho desde lo audiovisual trabajé
+                    siempre junto a humoristas en sketches y programas de entretenimiento. Luego me di cuenta que yo
+                    hago humor todo el día... pero si, fui comediante "profesional" durante unos cuantos años</div>
             </div>
             <div class="row mb-1">
                 <div class="col-4 bg-secondary  p-0 m-0 d-flex flex-column
                     text-white justify-content-center">
                     <img src="img/fotopablo1.jpg" height="auto" class="col-auto align-content-center pt-2 m-md-2"
                         style=" min-width: 150px;">
-                    <button class="btn btn-outline-light btn-sm mt-2 shadow-sm m-md-2">agrandar</button>
+                    <button class="btn btn-outline-light btn-sm mt-2 shadow-sm m-md-2" data-toggle="modal"
+                        data-target="#modalTres">agrandar</button>
+                </div>
+                <div class="modal" id="modalTres" role="dialog" tabindex="-1" aria-hidden="true"
+                    aria-labelledby="modalTitle" style="top: 10%; left: 10%;">
+                    <div className="modal-dialog">
+                        <div className="modal-content">
+                            <div className="modal-header">
+                                <h5 className="modat-title" id="modalTitle">
+                                    FreeLance de la Foto y el Video</hS>
+                            </div>
+                            <div className="modal-body">
+                                <img src="img/fotopablo1.jpg" height=" 500">
+                            </div>
+                            <div className="modal-footer">
+                            </div>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerra</button>
+
+                        </div>
+                    </div>
                 </div>
 
-                <div class="col-8 bg-warning mt-0 p-3 text-dark">Lorem ipsum dolor sit amet consectetur adipisicing
-                    elit.
-                    Expedita
-                    ea
-                    repudiandae laboriosam, architecto repellendus nam dolores minima doloremque totam suscipit, at
-                    debitis dolor. Dolores asperiores necessitatibus quibusdam eius dolor atque.</div>
+                <div class="col-8 bg-warning mt-0 p-3 text-dark">Hoy en dìa trabajo junto a emprendimietnos con los que
+                    nos hemos hecho amigos, registrando sus eventos como camarògrafo y editor, saco fotos también si se
+                    necesita y edito los videos de actualidad semanales del comediante Leandro Ureta.<br> Soy Freelance
+                    haciendo cosas que me gustan... loco por el humor, la ciencia ficción, la tecnología... hoy empiezo
+                    un nuevo viaje... capacitarme y ser Desarrollador. Capitan Picard, a su orden... vamos
+                </div>
             </div>
             <div class="row">
                 <div class="col-12 text-center m-2 p-2 mt-4 ">
@@ -152,7 +216,7 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,70,1) 70%, rgba
                     PYTHON
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="contacto">
                 <div class="col-md-6 m-3">
                     <form>
                         <div class="mb-3">
@@ -187,21 +251,25 @@ background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(35,35,70,1) 70%, rgba
     </article>
 
 
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-        crossorigin="anonymous"></script>
 
     <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
     <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
     <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
     <script src="componentes/Saludo.js" type="text/jsx"></script>
-    <script src="componentes/Modals.js" type="text/jsx"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+
+
+
+
+
 </body>
 
 </html>
